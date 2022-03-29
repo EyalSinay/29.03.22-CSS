@@ -1,0 +1,12 @@
+span[data-tooltip]{
+    font-style: italic;
+    position: relative;
+}
+
+span[data-tooltip]:hover::after{
+    content: attr(data-tooltip);
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    top: -1em;
+}
